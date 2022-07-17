@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Vanilla-WeatherApp</title>
+  </head>
+
+  <body>
+      <div class="container-fluid">
+        <form id="search-form"> 
+            <div class="row">
+                <div class="col-9 p-3">
+                    <input type="search" id="city-input" placeholder="Enter a city..." class="form-control">
+                    </div>
+                <div class="col-3 p-3">
+                    <input type="submit" value="Search" class="btn btn-primary w-100" >
+                </div>
+            </div>
+        </form>
+    
+        <div class="row">
+                <div class="col-6 ">
+                    <h1 id="city-input"> San Francisco </h1>
+                    <h2 id="day">  Thursday </h2> 
+                    <ul>
+                        <li id="time"> 03:31 </li>
+                        <li id="status"> <strong>   Clear sky </strong> </li> 
+                        <li id="humidity"> Humidity: <strong>   63% </strong> </li> 
+                        <li id="wind"> Wind:  <strong>  3.6km/h</strong></li>
+                        <li>Code Last Updated : 7/15/2022 8:57PM </li> 
+                    </ul>
+                </div>
+                <div class="col-6">
+                        <div class="temperature-container d-flex justify-content-center">
+                            <img src="img\5729392_cloudy_sunny_forecast_sun_cloud_weather.png" width="200" height="200"></img>
+                            <div>
+                                <span id="temperature">20</span>
+                                <span id="celsius">°C   </span>
+                                <span id="fahrenheit">°F</span>
+                         </div>
+                    </div>
+        </div>
+            <div class="row row-cols-7 align-content-center">
+                <div class="weather-group text-center">
+                    <div class="weather-days">
+                    <h5 class="c-day">Mon</h5>
+                      <img src="img\5729378_sunny_sun_weather_climate_forecast.png" class="weather-img" alt="..." width="80" height="80">
+                      <div class="card-body">
+                        <h5 class="temp">29°</h5>
+                        <p class="status">Sunny </p>
+                      </div>                          
+                    </div>
+                </div>
+           
+                <div class="weather-group text-center">
+                    <div class="weather-days">
+                    <h5 class="c-day">Tue</h5>
+                      <img src="\img\5729384_cloud_moon_night_forecast_weather_raining.png" class="weather-img" alt="..." width="80" height="80">
+                      <div class="card-body">
+                        <h5 class="temp">14°</h5>
+                        <p class="status">Cloudy Moon </p>
+                      </div>                          
+                    </div>
+                </div>
+
+                <div class="weather-group text-center">
+                    <div class="weather-days">
+                    <h5 class="c-day">Wed</h5>
+                      <img src="\img\5729377_forecast_windy_weather_storm_climate.png" class="weather-img" alt="..." width="80" height="80">
+                      <div class="card-body">
+                        <h5 class="temp">20°</h5>
+                        <p class="status">Windy </p>
+                      </div>                          
+                    </div>
+                </div>
+
+                <div class="weather-group text-center">
+                    <div class="weather-days">
+                    <h5 class="c-day">Fri </h5>
+                      <img src="img\5729392_cloudy_sunny_forecast_sun_cloud_weather.png" class="weather-img" alt="..." width="80" height="80">
+                      <div class="card-body">
+                        <h5 class="temp">16°</h5>
+                        <p class="status">Cloudy Sunny </p>
+                      </div>                          
+                    </div>
+                </div>
+    
+                <div class="weather-group text-center">
+                    <div class="weather-days">
+                    <h5 class="c-day">Sat </h5>
+                      <img src="img\5729378_sunny_sun_weather_climate_forecast.png" class="weather-img" alt="..." width="80" height="80">
+                      <div class="card-body">
+                        <h5 class="temp">25°</h5>
+                        <p class="status">Sunny </p>
+                      </div>                          
+                    </div>
+                </div>
+                <div class="weather-group text-center">
+                    <div class="weather-days">
+                    <h5 class="c-day">Sun</h5>
+                      <img src="\img\5729382_forecast_sun_cloud_weather_raining.png" class="weather-img" alt="..." width="80" height="80">
+                      <div class="card-body">
+                        <h5 class="temp">15°</h5>
+                        <p class="status"> Rainy sunny</p>
+                      </div>                          
+                    </div>
+                </div>    
+    <hr />
+    <footer> <em>
+    This project was coded by <a href="https://www.margaretcezar.com" target="_blank">Margaret Cezar</a> and is open sourced on <a href="https://github.com/Margaret6556/Vanilla-WeatherApp.git" target="_blank">Github repository</a> and hosted on <a href="Netlify" target="_blank">Netlify</a>
+    </em></footer>
+  </div>
+</div>
+</div>
+
+  </body>
+</html>

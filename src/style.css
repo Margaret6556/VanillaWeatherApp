@@ -1,0 +1,81 @@
+h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1rem;
+}
+
+footer {
+  align-items: center;
+  color: whitesmoke;
+}
+
+body {
+  background: radial-gradient(rgb(242, 242, 252) 41%, rgb(86, 107, 173) 100%);
+  font-family: "Acme", sans-serif;
+}
+
+.container-fluid {
+  background-color: #ffaaa5;
+  border-radius: 20px;
+  border-width: 2px;
+  height: 700px;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 3px solid #885df1;
+  border-radius: 20px;
+}
+
+.row {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.row-cols-7 {
+  align-content: center;
+}
+.col-9 {
+  margin-top: 10px;
+  height: 2px;
+}
+
+.col-6 {
+  height: 40%;
+}
+.col-3 {
+  margin-top: 10px;
+}
+
+#temperature {
+  font-size: 7rem;
+  text-align: center;
+}
+
+#celsius {
+  font-size: 2rem;
+}
+#fahrenheit {
+  font-size: 2rem;
+}
+
+.weather-group {
+  align-items: center;
+  margin: 10px 10px 10px 10px;
+}
+
+.c-day {
+  text-align: center;
+}
+
+footer {
+  text-align: center !important;
+  padding-top: 10px;
+  font-size: 1rem;
+  color: black;
+}
