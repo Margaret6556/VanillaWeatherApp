@@ -31,10 +31,10 @@ function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
-  console.log(cityInputElement.value);
+  h1.innerHTML = cityInputElement.value;
 }
 
 let city = document.querySelector("#search-form");
 city.addEventListener("submit", handleSubmit);
 
-search("Toronto");
+searchCity("Toronto");
