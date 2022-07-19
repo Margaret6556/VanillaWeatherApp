@@ -21,6 +21,8 @@
 
   <body>
       <div class="container-fluid">
+        <div class="weather-app-wrapper">
+          <div class="weather-app">
         <form id="search-form"> 
             <div class="row">
                 <div class="col-9 p-3">
@@ -34,7 +36,7 @@
     
         <div class="row">
                 <div class="col-6 ">
-                    <h1 id="city-input"> San Francisco </h1>
+                    <h1 id="city"> San Francisco </h1>
                     <h2 id="day">  Thursday </h2> 
                     <ul>
                         <li id="time"> 03:31 </li>
@@ -45,7 +47,7 @@
                     </ul>
                 </div>
                 <div class="col-6">
-                        <div class="temperature-container d-flex justify-content-center">
+                        <div class="temperature-container d-flex justify-content-center flex-wrap">
                             <img src="img\5729392_cloudy_sunny_forecast_sun_cloud_weather.png" width="200" height="200"></img>
                             <div>
                                 <span id="temperature">20</span>
@@ -53,8 +55,9 @@
                                 <span id="fahrenheit">°F</span>
                          </div>
                     </div>
+                </div>
         </div>
-            <div class="row row-cols-7 align-content-center">
+            <div class="row row-cols-6 justify-content-center">
                 <div class="weather-group text-center">
                     <div class="weather-days">
                     <h5 class="c-day">Mon</h5>
@@ -119,10 +122,11 @@
                       </div>                          
                     </div>
                 </div>    
-    <hr />
+              </div>
     <footer> <em>
-    This project was coded by <a href="https://www.margaretcezar.com" target="_blank">Margaret Cezar</a> and is open sourced on <a href="https://github.com/Margaret6556/Vanilla-WeatherApp.git" target="_blank">Github repository</a> and hosted on <a href="Netlify" target="_blank">Netlify</a>
+    This project was coded by <a href="https://www.margaretcezar.com" target="_blank">Margaret Cezar</a> and is open sourced on <a href="https://github.com/Margaret6556/VanillaWeatherApp.git" target="_blank">Github repository</a> and hosted on <a href="Netlify" target="_blank">Netlify</a>
     </em></footer>
+  </div>
   </div>
 </div>
 </div>
