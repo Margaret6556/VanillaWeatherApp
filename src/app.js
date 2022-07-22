@@ -7,23 +7,19 @@ function formatDate(date) {
   if (minutes < 10) {
     minutes - `0${minutes}`;
   }
-}
 
-let dayIndex = date.getDay();
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[dayIndex];
+  let dayIndex = date.getDay();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[dayIndex];
 
-return newFunction();
-
-function newFunction() {
   return `${day} ${hours}:${minutes}`;
 }
 
@@ -42,7 +38,7 @@ function search(event) {
 
 function searchCity(city) {
   let apiKey = "cd32822f9e64e59f7e2528e37e7549fa";
-  let units = "metrics";
+  let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(showTemperature);
 }
