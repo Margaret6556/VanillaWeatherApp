@@ -1,6 +1,6 @@
 function formatDate(date) {
   let hours = date.getHours();
-  if (hours < 10) {
+  if (hours < 12) {
     hours = `0${hours}`;
   }
   let minutes = date.getMinutes();
