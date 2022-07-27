@@ -18,10 +18,43 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-  let day = days[dayIndex];
+  let day = day[dayIndex];
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day}`;
 }
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let dayElement = document.querySelector ("#c-day");
+  let maxtempElement = document.querySelector ("#max-temp");
+  let mintempElement = document.querySelector ("#min-temp");
+  let iconElement = document.querySelector ("#img");
+
+
+
+  let forecastHTML = `<div id=forecast-group>`;
+
+  let days = ["Mon","Tues","Wed","Fri","Sat","Sun",];
+  forecast.forEach (function (forecast, index))
+    if (index < 6) {   
+  
+    forecastElement.innerHTML =
+    forecastHTML +
+    `
+          <div id="forecast-group">
+              <div class="weather-daily text-center">
+              <h5 class="c-day">${day}</h5>
+                <img src="img\5729378_sunny_sun_weather_climate_forecast.png" class="weather-img" alt="..." width="80" height="80">
+                <div class="forecast-temp">
+                  <span class="max-temp">29°</span>
+                  <span class="min-temp">22°</span>
+                </div>                          
+              </div>
+
+  `; }
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+};
 
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -60,10 +93,11 @@ function getPosition(position) {
 }
 
 let dateElement = document.querySelector("#date");
-let currentTime = new Date();
-dateElement.innerHTML = formatDate(currentTime);
+let currentDate = new Date();
+dateElement.innerHTML = formatDate(currentDate);
 
 let city = document.querySelector("#search-form");
 city.addEventListener("submit", handleSubmit);
 
 searchCity("Paris");
+displayForecast();
