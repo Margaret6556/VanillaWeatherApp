@@ -1,11 +1,17 @@
 h1 {
   font-size: 3rem;
   margin-top: 20px;
+  margin-left: 32px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-left: 32px;
 }
 
 li {
   list-style-type: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -14,7 +20,7 @@ footer {
 }
 
 body {
-  background: radial-gradient(rgb(242, 242, 252) 41%, rgb(110, 110, 150) 100%);
+  background: radial-gradient(rgb(242, 242, 252) 41%, rgb(86, 107, 173) 100%);
   font-family: "Acme", sans-serif;
 }
 
@@ -37,12 +43,9 @@ body {
   border-radius: 10px;
 }
 
-ul.li {
-  font-size: 2rem;
-}
-
 .col-6 {
   height: 40%;
+  margin-top: 10px;
 }
 .col-3 {
   margin-top: 10px;
