@@ -26,6 +26,7 @@ function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Mon", "Tues", "Wed", "Fri", "Sat", "Sun"];
+  return days[day];
 }
 function displayForecast(response) {
   let forecast = response.data.daily;
@@ -33,21 +34,19 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecast, index) {
+  forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
-      forecastElement.innerHTML =
+      forecastElement =
         forecastHTML +
         `
-        <div class="row" id="forecast">
-        <div class="weather-daily text-center">
+        <div class="weather-daily text-center" id="forecast">
            <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
-             <img src="http://openweathermap.org/img/wn/04d@2x.png" class="weather-img" alt="..." width="80" height="80">
+             <img src="https://openweathermap.org/img/wn/04d@2x.png" class="weather-img" alt="..." width="80" height="80">
              <div class="forecast-temp">
                <span class="max-temp">29°</span>
                <span class="min-temp">22°</span>
              </div>                          
          </div>
-       </div>
   `;
     }
   });
@@ -57,8 +56,9 @@ function displayForecast(response) {
 
 function getForecast(coordinates) {
   let apiKey = "cd32822f9e64e59f7e2528e37e7549fa";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${APIkey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}`;
   axios.get(apiUrl).then(displayForecast);
+  console.log(apiUrl);
 }
 
 function displayTemperature(response) {
@@ -112,5 +112,7 @@ dateElement.innerHTML = formatDate(currentDate);
 
 let city = document.querySelector("#search-form");
 city.addEventListener("submit", handleSubmit);
+
+let celciusTemperature = null;
 
 searchCity("Paris");

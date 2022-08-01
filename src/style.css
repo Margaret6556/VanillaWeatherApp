@@ -33,7 +33,6 @@ body {
   margin-top: 30px;
   margin-bottom: 20px;
   padding: 10px;
-  border: 3px solid #885df1;
   border-radius: 20px;
 }
 
@@ -74,6 +73,8 @@ body {
 
 .weather-daily {
   align-items: center;
+  align-content: justify;
+  margin-left: 10px;
 }
 
 .c-day {

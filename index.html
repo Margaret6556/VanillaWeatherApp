@@ -25,7 +25,7 @@
         <form id="search-form"> 
             <div class="row">
                 <div class="col-9 p-3">
-                    <input type="search" id="city-input" placeholder="Enter a city..." class="form-control"/>
+                    <input type="search" id="city-input" placeholder="Enter a city..." autocomplete="off" class="form-control"/>
                     </div>
                 <div class="col-3 p-3">
                     <input type="submit" value="Search" class="btn btn-primary w-100" >
@@ -39,7 +39,7 @@
                     <h2 id="date" > Last Updated:  Thursday </h2> 
 
                     <ul>
-                        <li id="status"> <strong>   Clear sky </strong> </li> 
+                        <li id="description"> <strong>   Clear sky </strong> </li> 
                         <li id="humidity"> Humidity: <strong>  63% </strong> </li> 
                         <li id="wind"> Wind:  <strong>  3.6km/h</strong></li>
                     </ul>
@@ -55,13 +55,14 @@
                     </div>
                 </div>
         </div>
-        <div class="row" id="forecast">
-           <div class="weather-daily text-center">
+        <div class="row" >
+           <div class="weather-daily text-center" id="forecast">
               <div class="weather-forecast-date">Mon</div>
-                <img src="http://openweathermap.org/img/wn/04d@2x.png" class="weather-img" alt="..." width="80" height="80">
+                <img src="http://openweathermap.org/img/wn/04d@2x.png" class="weather-img" alt="weather icon" width="80" height="80">
                 <div class="forecast-temp">
                   <span class="max-temp">29°</span>
-                  <span class="min-temp">22°</span>
+                  <span class="min-temp">22°</span> <br />
+                  <span class="description"> Cloudy </span>
                 </div>                          
             </div>
           </div>
