@@ -25,7 +25,7 @@ function formatDate(timestamp) {
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
-  let days = ["Mon", "Tues", "Wed", "Fri", "Sat", "Sun"];
+  let days = ["Mon", "Tues", "Wed", "Thurs", "Fri", "Sat", "Sun"];
   return days[day];
 }
 function displayForecast(response) {
@@ -36,15 +36,19 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
-      forecastElement =
+      forecastHTML =
         forecastHTML +
         `
         <div class="weather-daily text-center" id="forecast">
            <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
              <img src="https://openweathermap.org/img/wn/04d@2x.png" class="weather-img" alt="..." width="80" height="80">
              <div class="forecast-temp">
-               <span class="max-temp">29°</span>
-               <span class="min-temp">22°</span>
+               <span class="max-temp">${Math.round(
+                 forecastDay.temp.max
+               )}°</span>
+               <span class="min-temp">${Math.round(
+                 forecastDay.temp.min
+               )}°</span>
              </div>                          
          </div>
   `;
@@ -115,4 +119,4 @@ city.addEventListener("submit", handleSubmit);
 
 let celsiusTemperature = null;
 
-searchCity("Paris");
+searchCity("San Francisco");

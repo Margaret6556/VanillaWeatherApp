@@ -24,10 +24,10 @@
           <div class="weather-app">
         <form id="search-form"> 
             <div class="row">
-                <div class="col-9 p-3">
+                <div class="col-9 p-4">
                     <input type="search" id="city-input" placeholder="Enter a city..." autocomplete="off" class="form-control"/>
                     </div>
-                <div class="col-3 p-3">
+                <div class="col-3 p-4">
                     <input type="submit" value="Search" class="btn btn-primary w-100" >
                 </div>
             </div>
@@ -55,10 +55,11 @@
                     </div>
                 </div>
         </div>
-        <div class="row" >
+        <div class="row justify-content-around" >
            <div class="weather-daily text-center" id="forecast">
               <div class="weather-forecast-date">Mon</div>
-                <img src="http://openweathermap.org/img/wn/04d@2x.png" class="weather-img" id="icon" alt="weather icon" width="80" height="80">
+                <img src="http://openweathermap.org/img/wn/${
+                  forecastDay.weather[0].icon}01n.png" class="weather-img" id="icon" alt="weather icon" width="80" height="80">
                 <div class="forecast-temp">
                   <span class="max-temp">29°</span>
                   <span class="min-temp">22°</span> <br />
@@ -69,10 +70,11 @@
                        
        </div>             
       </div>
+    </div>
     <footer> <em>
     This project was coded by <a href="https://www.margaretcezar.com" target="_blank">Margaret Cezar</a> and is open sourced on <a href="https://github.com/Margaret6556/VanillaWeatherApp.git" target="_blank">Github repository</a> and hosted on <a href="https://62db72ed705cf947ef5b0393--fluffy-sunshine-834a0a.netlify.app/" target="_blank">Netlify</a>
     </em></footer>
-  </div>
+
   </div>
 </div>
 </div>
