@@ -18,6 +18,7 @@ h2 {
 li {
   list-style-type: none;
   font-size: 1.5rem;
+  text-transform: capitalize;
 }
 
 footer {
@@ -54,7 +55,7 @@ footer {
 }
 
 .weather-forecast-date {
-  width: 10rem;
+  width: 5rem;
   font-size: 1.5rem;
   color: rgb(114, 114, 248);
 }
