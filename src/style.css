@@ -18,6 +18,7 @@ h2 {
 li {
   list-style-type: none;
   font-size: 1.5rem;
+  text-transform: capitalize ;
 }
 
 footer {
@@ -31,8 +32,8 @@ footer {
   box-sizing: border-box;
   border-radius: 20px;
   border-width: 2px;
-  height: 600px;
-  width: 60%;
+  height: 550px;
+  width: 70%;
   margin-top: 60px;
   margin-bottom: 20px;
   padding: 10px;
@@ -54,14 +55,14 @@ footer {
 }
 
 .weather-forecast-date {
-  width: 10rem;
+  width: 8rem;
   font-size: 1.5rem;
   color: rgb(114, 114, 248);
 }
 
 .max-temp
 .min-temp {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 #temperature {
   font-size: 7rem;
@@ -82,6 +83,6 @@ footer {
 
 footer {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
 }
