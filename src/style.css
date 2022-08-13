@@ -18,6 +18,7 @@ h2 {
 li {
   list-style-type: none;
   font-size: 1.5rem;
+  text-transform: capitalize;
 }
 
 footer {
