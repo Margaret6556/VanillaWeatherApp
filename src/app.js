@@ -18,10 +18,9 @@ function formatDate(timestamp) {
     "Friday",
     "Saturday",
   ]; 
-
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
-
+}
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -122,4 +121,4 @@ city.addEventListener("submit", handleSubmit);
 
 let celsiusTemperature = null;
 
-searchCity("Portugal");
+searchCity("San Francisco");
