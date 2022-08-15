@@ -122,4 +122,4 @@ city.addEventListener("submit", handleSubmit);
 
 let celsiusTemperature = null;
 
-searchCity("Paris");
+searchCity("Portugal");
