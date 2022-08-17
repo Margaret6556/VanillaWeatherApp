@@ -42,9 +42,8 @@ function displayForecast(response) {
         <div class="weather-daily text-center" id="forecast">
            <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
            <img src="https://openweathermap.org/img/wn/${
-            forecastDay.weather[0].icon}@2x.png" class="weather-img" alt="..." width="80" height="80">
-             <img src="https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png" class="weather-img" alt="..." width="80" height="80">
-             <div class="forecast-temp">
+            forecastDay.weather[0].icon
+          }@2x.png" class="weather-img" alt="..." width="80" height="80">
                <span class="max-temp">${Math.round(
                  forecastDay.temp.max
                )}°</span>

@@ -11,8 +11,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-left: 32px;
+  color: rgb(114, 114, 248);
 }
 
 li {
@@ -32,7 +33,7 @@ footer {
   box-sizing: border-box;
   border-radius: 20px;
   border-width: 2px;
-  height: 550px;
+  height: 600px;
   width: 70%;
   margin-top: 60px;
   margin-bottom: 20px;
@@ -55,7 +56,7 @@ footer {
 }
 
 .weather-forecast-date {
-  width: 8rem;
+  width: 6rem;
   font-size: 1.5rem;
   color: rgb(114, 114, 248);
 }
