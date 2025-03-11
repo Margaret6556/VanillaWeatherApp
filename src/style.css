@@ -42,6 +42,9 @@ footer {
 }
 
 .forecast-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   margin-top: 10px;
   padding: 10px;
   border-radius: 10px;
@@ -61,8 +64,7 @@ footer {
   color: rgb(114, 114, 248);
 }
 
-.max-temp
-.min-temp {
+.max-temp .min-temp {
   font-size: 2rem;
 }
 #temperature {
@@ -85,5 +87,5 @@ footer {
 footer {
   text-align: center;
   font-size: 1rem;
-  color: black;
+  color: white
 }
